@@ -1,34 +1,161 @@
-<section class="py-16 px-4 md:px-8 max-w-6xl mx-auto">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Services</h2>
-    <p class="text-gray-300 max-w-2xl mx-auto">
-      If you are wondering how to catch a cheating partner, our comprehensive investigation services provide the proof you need.
-    </p>
-  </div>
-  
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Service 1: Digital Forensics -->
-    <div class="bg-black/40 backdrop-blur-xl border border-white/20 p-8 rounded-2xl text-white hover:bg-black/50 transition-all">
-      <h3 class="text-2xl font-semibold mb-4">Digital Forensics</h3>
-      <p class="text-gray-300">
-        We utilize advanced digital investigation methods to uncover hidden messages, deleted files, and secret social media accounts to reveal the truth.
-      </p>
+<div class="w-full max-w-6xl mx-auto px-4 py-8 animate-fadeIn">
+    <!-- Header -->
+    <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold mb-3 border border-indigo-500/30">
+            <span>Discreet Intelligence & Evidence Collection</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">Investigation Services & Packages</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
+            Transparent, fixed-price investigation solutions designed to give you concrete clarity and peace of mind without hidden fees.
+        </p>
     </div>
 
-    <!-- Service 2: Background Checks -->
-    <div class="bg-black/40 backdrop-blur-xl border border-white/20 p-8 rounded-2xl text-white hover:bg-black/50 transition-all">
-      <h3 class="text-2xl font-semibold mb-4">Background Checks</h3>
-      <p class="text-gray-300">
-        Our thorough checks delve into histories and red flags. Sometimes, the best option is to hire a private investigator for infidelity to uncover undisclosed pasts.
-      </p>
+    <!-- Pricing Packages Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Package 1: Core Investigation -->
+        <div class="bg-black/50 backdrop-blur-xl border border-indigo-500/30 p-6 sm:p-8 rounded-2xl shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-indigo-400 transition-all">
+            <div class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-lg">
+                Most Popular
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-2">Core OSINT Package</h3>
+                <p class="text-xs text-gray-400 mb-4">Complete digital footprint & background intelligence scan.</p>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-4xl font-extrabold text-white">$249</span>
+                    <span class="text-sm font-semibold text-gray-400">AUD (Flat Fee)</span>
+                </div>
+                
+                <ul class="space-y-3 text-xs sm:text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                    <li class="flex items-start gap-2">
+                        <span class="text-indigo-400 font-bold">✓</span>
+                        <span>Comprehensive OSINT Digital Footprint Search</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-indigo-400 font-bold">✓</span>
+                        <span>Secret Dating Apps Audit (Tinder, Bumble, Hinge, Ashley Madison)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-indigo-400 font-bold">✓</span>
+                        <span>Hidden Social Media Profiles & Alt Account Detection</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-indigo-400 font-bold">✓</span>
+                        <span>Basic Background & Public Record Verification</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-indigo-400 font-bold">✓</span>
+                        <span>24–48 Hour Encrypted Evidentiary Findings Report</span>
+                    </li>
+                </ul>
+            </div>
+            <button onclick="selectServiceAndStart('core_249')" class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                <span>Select Core Package</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+        </div>
+
+        <!-- Package 2: Advanced Digital Forensics -->
+        <div class="bg-black/50 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-2xl shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-pink-500 transition-all">
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-2">Digital Forensics Audit</h3>
+                <p class="text-xs text-gray-400 mb-4">Deep cyber analysis, device security & tracking audit.</p>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-4xl font-extrabold text-white">$599</span>
+                    <span class="text-sm font-semibold text-gray-400">AUD</span>
+                </div>
+                
+                <ul class="space-y-3 text-xs sm:text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                    <li class="flex items-start gap-2">
+                        <span class="text-pink-400 font-bold">✓</span>
+                        <span>Everything in the Core OSINT Package</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-pink-400 font-bold">✓</span>
+                        <span>Stalkerware & Hidden Spy App Detection on Shared Devices</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-pink-400 font-bold">✓</span>
+                        <span>Wi-Fi Network, Router & Location Log Analysis</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-pink-400 font-bold">✓</span>
+                        <span>Metadata & Geolocation Extraction from Suspicious Photos</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-pink-400 font-bold">✓</span>
+                        <span>Personal Device Hardening & Digital Safety Strategy</span>
+                    </li>
+                </ul>
+            </div>
+            <button onclick="selectServiceAndStart('forensics_599')" class="w-full py-3.5 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl border border-white/20 transition-all flex items-center justify-center gap-2">
+                <span>Select Digital Forensics</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+        </div>
+
+        <!-- Package 3: 24/7 Rapid Emergency Response -->
+        <div class="bg-black/50 backdrop-blur-xl border border-white/20 p-6 sm:p-8 rounded-2xl shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-red-500 transition-all">
+            <div class="absolute top-0 right-0 bg-red-600/30 text-red-300 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-lg border-b border-l border-red-500/30">
+                Crisis Support
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-2">24/7 Crisis Response</h3>
+                <p class="text-xs text-gray-400 mb-4">Real-time guidance for volatile situations & DV safety.</p>
+                <div class="flex items-baseline gap-1 mb-6">
+                    <span class="text-4xl font-extrabold text-white">$899</span>
+                    <span class="text-sm font-semibold text-gray-400">AUD</span>
+                </div>
+                
+                <ul class="space-y-3 text-xs sm:text-sm text-gray-300 mb-8 border-t border-white/10 pt-6">
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400 font-bold">✓</span>
+                        <span>Priority Expedited Evidence Delivery (Under 24 Hours)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400 font-bold">✓</span>
+                        <span>1-on-1 Dedicated Senior Investigator Hotline & Signal Access</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400 font-bold">✓</span>
+                        <span>Minute-to-Minute Guidance During Volatile Confrontations</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400 font-bold">✓</span>
+                        <span>Supplementary Domestic Violence Safety Planning & Resources</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400 font-bold">✓</span>
+                        <span>Pre-Legal Separation Intelligence Briefing</span>
+                    </li>
+                </ul>
+            </div>
+            <button onclick="selectServiceAndStart('emergency_899')" class="w-full py-3.5 bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-500 hover:to-pink-500 text-white font-bold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                <span>Select 24/7 Response</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+        </div>
+
     </div>
 
-    <!-- Service 3: Surveillance -->
-    <div class="bg-black/40 backdrop-blur-xl border border-white/20 p-8 rounded-2xl text-white hover:bg-black/50 transition-all">
-      <h3 class="text-2xl font-semibold mb-4">Surveillance</h3>
-      <p class="text-gray-300">
-        Discreet and professional physical surveillance to monitor activities and confirm suspicions, ensuring you have indisputable evidence.
-      </p>
+    <!-- Custom Operations Banner -->
+    <div class="bg-gradient-to-r from-indigo-950/60 to-purple-950/60 border border-indigo-500/30 p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 mb-16 text-center md:text-left">
+        <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Need a Bespoke Investigation?</h3>
+            <p class="text-sm text-gray-300 max-w-2xl">
+                "If you can think of an investigation service surrounding relationship infidelity, asset tracing, or digital verification—our collective handles it."
+            </p>
+        </div>
+        <button onclick="loadPage('contact.html', event)" class="px-8 py-3.5 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition shrink-0 shadow-lg">
+            Request Custom Consultation
+        </button>
     </div>
-  </div>
-</section>
+
+    <!-- Guarantee Callout -->
+    <div class="bg-black/40 backdrop-blur-xl border border-white/10 p-6 rounded-xl text-center max-w-3xl mx-auto">
+        <div class="text-yellow-400 font-bold text-sm mb-1">🛡️ The 100% Integrity Guarantee</div>
+        <p class="text-xs text-gray-300 leading-relaxed">
+            If we hit an insurmountable roadblock and cannot verify or retrieve actionable findings for your case, you receive a full refund minus any direct hard costs incurred. All payments processed with PayPal Buyer Protection.
+        </p>
+    </div>
+</div>

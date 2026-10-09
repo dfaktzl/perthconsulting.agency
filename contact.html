@@ -1,43 +1,97 @@
-<div class="max-w-2xl mx-auto p-8 bg-black/40 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl text-white">
-    <h2 class="text-3xl font-bold mb-6 text-center tracking-tight">Contact a Discreet Investigator</h2>
-    
-    <div class="mb-8 text-gray-300 text-sm leading-relaxed">
-        <p class="mb-4">
-            If you are wondering <strong class="text-white">how to confront a partner about cheating</strong>, it is crucial to have undeniable proof first. Confrontations without solid evidence often lead to denial and hidden tracks.
-        </p>
-        <p>
-            Our <strong class="text-white">discreet infidelity investigation</strong> services provide you with the clarity you need. Reach out confidentially below. Your privacy is our absolute priority; all communications are strictly confidential and secure.
+<div class="w-full max-w-4xl mx-auto px-4 py-8 animate-fadeIn">
+    <!-- Header -->
+    <div class="bg-black/50 backdrop-blur-xl border border-white/20 p-8 rounded-2xl shadow-2xl mb-8 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold mb-3 border border-indigo-500/30">
+            <span>Direct & Encrypted Inquiries</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">Contact an Investigator</h2>
+        <p class="text-sm sm:text-base text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Have questions about feasibility, pricing, or custom operations? Send us a secure message below. All inquiries are strictly protected under non-disclosure agreements.
         </p>
     </div>
 
-    <form class="space-y-6" action="#" method="POST">
-        <div>
-            <label for="name" class="block text-sm font-medium text-gray-200 mb-1">Name (or Alias)</label>
-            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400 transition-colors" placeholder="How should we address you?">
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <div>
-            <label for="email" class="block text-sm font-medium text-gray-200 mb-1">Secure Email Address</label>
-            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400 transition-colors" placeholder="A safe email we can reach you at">
+        <!-- Contact Form (2 Cols) -->
+        <div class="md:col-span-2 bg-black/60 backdrop-blur-2xl border border-white/20 p-6 sm:p-8 rounded-2xl shadow-2xl text-white">
+            <h3 class="text-xl font-bold text-white mb-4">Confidential Message Form</h3>
+            
+            <form id="directContactForm" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1">Your Safe Name / Alias *</label>
+                    <input type="text" id="contactName" name="alias" required class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-3 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition" placeholder="e.g., Alex">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1">Unmonitored Email Address *</label>
+                    <input type="email" id="contactEmail" name="email" required class="w-full bg-black/50 border border-white/20 rounded-xl px-4 py-3 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition" placeholder="safe-inbox@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1">Urgency Level</label>
+                    <select id="contactUrgency" name="urgency" class="w-full bg-black/80 border border-white/20 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-indigo-500 transition">
+                        <option value="standard">Standard Inquiry (Reply within 2 hours)</option>
+                        <option value="urgent">Urgent Investigation (Reply within 30 mins)</option>
+                        <option value="crisis">24/7 Emergency Crisis / DV Support</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1">Brief Situation Description *</label>
+                    <textarea id="contactDetails" name="details" rows="4" required class="w-full bg-black/50 border border-white/20 rounded-xl p-4 text-white text-sm placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition resize-none" placeholder="Provide a brief summary of what you are experiencing or what services you require..."></textarea>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 bg-white/5 border border-white/10 rounded-xl">
+                    <input type="checkbox" id="newsletterCheck" name="newsletter" class="mt-1 w-4 h-4 text-indigo-600 rounded bg-black border-white/30">
+                    <label for="newsletterCheck" class="text-xs text-gray-300 leading-relaxed cursor-pointer">
+                        Send discreet digital security tips & relationship advisory updates to this safe email.
+                    </label>
+                </div>
+
+                <button type="submit" id="directContactSubmitBtn" class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-base">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    <span>Send Confidential Message</span>
+                </button>
+            </form>
         </div>
-        
-        <div>
-            <label for="details" class="block text-sm font-medium text-gray-200 mb-1">Situation Details</label>
-            <textarea id="details" name="details" rows="5" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white placeholder-gray-400 transition-colors resize-none" placeholder="Briefly describe what you've noticed or your concerns..."></textarea>
+
+        <!-- Sidebar Info & FAQs (1 Col) -->
+        <div class="space-y-6">
+            <!-- Discretion Box -->
+            <div class="bg-black/50 backdrop-blur-xl border border-white/20 p-6 rounded-2xl text-white">
+                <div class="text-green-400 font-bold text-sm mb-2 flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
+                    Investigators On-Duty
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed mb-4">
+                    Our triage team is active 24/7 across Australian timezones (AWST, ACST, AEST).
+                </p>
+                <div class="space-y-2 border-t border-white/10 pt-4 text-xs text-gray-300">
+                    <div><strong>Direct Intake Email:</strong><br><span class="text-indigo-300 font-mono">intake@perthconsulting.agency</span></div>
+                    <div class="pt-2"><strong>Payment Security:</strong><br><span class="text-gray-300">PayPal Encrypted Escrow with Stealth Bank Descriptor</span></div>
+                </div>
+            </div>
+
+            <!-- Quick FAQ Accordion -->
+            <div class="bg-black/50 backdrop-blur-xl border border-white/20 p-6 rounded-2xl text-white">
+                <h4 class="font-bold text-sm mb-4 text-white">Frequently Asked Questions</h4>
+                
+                <div class="space-y-3 text-xs">
+                    <div>
+                        <strong class="text-indigo-300 block mb-1">Will my partner find out?</strong>
+                        <p class="text-gray-400 leading-relaxed">No. We operate with 100% passive digital OSINT and stealth protocols. No contact is ever made with the target.</p>
+                    </div>
+                    <div class="border-t border-white/10 pt-3">
+                        <strong class="text-indigo-300 block mb-1">Is this service legal in Australia?</strong>
+                        <p class="text-gray-400 leading-relaxed">Yes. All intelligence is gathered strictly through open-source records, legal public data, and authorized audits.</p>
+                    </div>
+                    <div class="border-t border-white/10 pt-3">
+                        <strong class="text-indigo-300 block mb-1">What if no proof is found?</strong>
+                        <p class="text-gray-400 leading-relaxed">If we encounter an insurmountable roadblock and cannot provide conclusive findings, you receive a full refund minus hard costs.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <button type="submit" class="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors shadow-lg flex justify-center items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
-            </svg>
-            Send Confidential Message
-        </button>
-    </form>
-    
-    <p class="text-xs text-gray-400 text-center mt-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline mr-1 -mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-        </svg>
-        Your connection is secure and your inquiry is protected by investigator-client privilege.
-    </p>
+
+    </div>
 </div>
